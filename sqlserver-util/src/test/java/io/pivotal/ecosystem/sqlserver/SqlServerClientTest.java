@@ -104,11 +104,6 @@ public class SqlServerClientTest {
         assertFalse(client.checkDatabaseExists("kjfhskfjd"));
     }
 
-    @Test
-    public void testUri() {
-        assertEquals("jdbc:sqlserver://35.188.63.27:1433", client.getDbUrl(null));
-        assertEquals("jdbc:sqlserver://35.188.63.27:1433;databaseName=foo", client.getDbUrl("foo"));
-    }
 
     @Test
     public void testClean() {
